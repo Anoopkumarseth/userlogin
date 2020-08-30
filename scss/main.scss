@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    outline: 0;
+}
+$shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+$shadowHov: 5px 2px 10px rgba(0, 0, 0, 0.15);
+
+$trans: all ease 0.5s;
+
+.d-flex {
+    display: flex;
+}
+.jcon-center {
+    justify-content: center;
+}
+.col-flex {
+    flex-direction: column;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1247px;
+}
+button {
+    margin-bottom: 1rem;
+    display: flex;
+    border: 1px solid;
+    padding: 2px 2px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.titlebar {
+    display: flex;
+    justify-content: center;
+    h2 {
+        font-weight: 400;
+        font-size: 46px;
+    }
+}
+.row {
+    display: flex;
+    width: 100%;
+    .col {
+        width: 100%;
+    }
+}
+.userLogin {
+    padding: 3.5rem 4rem;
+    border-right: 1px solid #999;
+    .heading {
+        color: #757575;
+        font-size: 24px;
+    }
+
+    button,
+    .mobileInput {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        box-shadow: $shadow;
+        border: 0;
+        border-radius: 5px;
+        font-size: 22px;
+        transition: $trans;
+        &:hover{
+            box-shadow: $shadowHov;
+        }
+    }
+    button:hover {
+        background: #5d4ce0;
+        transition: $trans;
+    }
+
+    .mobileInput {
+        label {
+            background: #fff;
+            color: #7666f6;
+            display: block;
+            font-size: 16px;
+            margin-left: 1rem;
+            margin-top: 0.2rem;
+            font-weight: 300;
+        }
+        .inputField {
+            display: flex;
+            overflow: hidden;
+            .STDCode {
+                width: 35px;
+            }
+
+            input {
+                border: 0;
+                font-size: 22px;
+                margin-left: 1rem;
+                margin-top: 5px;
+                color: #666;
+                &::-webkit-input-placeholder {
+                    color: #bbb;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    button {
+        background: #7666f6;
+        color: #fff;
+        margin-top: 2rem;
+    }
+}
+.socialLogin {
+    padding: 5rem 4rem;
+    button {
+        box-shadow: $shadow;
+        &:hover{
+            box-shadow: $shadowHov;
+        }
+        span {
+            margin-right: auto;
+            color: #fff;
+        }
+        .logo {
+            background: #fff;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &.fb {
+            background: #3f5a93;
+            transition: $trans;
+            &:hover {
+                background: #284277;
+            }
+        }
+        &.google {
+            background: #4c87ec;
+            transition: $trans;
+            &:hover {
+                background: #3b76dc;
+                transition: $trans;
+            }
+        }
+        &.apple {
+            padding: 0;
+            border: 2px solid;
+            background: #fff;
+            transition: $trans;
+            &:hover {
+                background: #e8e8e8;
+                transition: $trans;
+            }
+            span {
+                color: #000;
+            }
+            .logo {
+                border-right: 2px solid;
+            }
+        }
+    }
+}
+
+.brandSlider {
+    margin-top: 15px;
+    figure {
+        height: 100px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $shadow;
+        border-radius: 5px;
+        margin: 15px;
+        cursor: grab;
+        img {
+            height: 25px;
+        }
+        &.sqIcon img{
+            height: 45px;
+        }
+        &.huaweiImg img {
+            width: 80px;
+            height: 14px;
+        }
+    }
+}
+@import 'responsive';

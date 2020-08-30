@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  outline: 0;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jcon-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1247px;
+}
+
+button {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid;
+  padding: 2px 2px;
+  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.titlebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titlebar h2 {
+  font-weight: 400;
+  font-size: 46px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.row .col {
+  width: 100%;
+}
+
+.userLogin {
+  padding: 3.5rem 4rem;
+  border-right: 1px solid #999;
+}
+
+.userLogin .heading {
+  color: #757575;
+  font-size: 24px;
+}
+
+.userLogin button,
+.userLogin .mobileInput {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 5px;
+  font-size: 22px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.userLogin button:hover,
+.userLogin .mobileInput:hover {
+  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.userLogin button:hover {
+  background: #5d4ce0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.userLogin .mobileInput label {
+  background: #fff;
+  color: #7666f6;
+  display: block;
+  font-size: 16px;
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  font-weight: 300;
+}
+
+.userLogin .mobileInput .inputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.userLogin .mobileInput .inputField .STDCode {
+  width: 35px;
+}
+
+.userLogin .mobileInput .inputField input {
+  border: 0;
+  font-size: 22px;
+  margin-left: 1rem;
+  margin-top: 5px;
+  color: #666;
+}
+
+.userLogin .mobileInput .inputField input::-webkit-input-placeholder {
+  color: #bbb;
+  font-weight: 300;
+}
+
+.userLogin button {
+  background: #7666f6;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.socialLogin {
+  padding: 5rem 4rem;
+}
+
+.socialLogin button {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.socialLogin button:hover {
+  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.socialLogin button span {
+  margin-right: auto;
+  color: #fff;
+}
+
+.socialLogin button .logo {
+  background: #fff;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialLogin button.fb {
+  background: #3f5a93;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.socialLogin button.fb:hover {
+  background: #284277;
+}
+
+.socialLogin button.google {
+  background: #4c87ec;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.socialLogin button.google:hover {
+  background: #3b76dc;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.socialLogin button.apple {
+  padding: 0;
+  border: 2px solid;
+  background: #fff;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.socialLogin button.apple:hover {
+  background: #e8e8e8;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.socialLogin button.apple span {
+  color: #000;
+}
+
+.socialLogin button.apple .logo {
+  border-right: 2px solid;
+}
+
+.brandSlider {
+  margin-top: 15px;
+}
+
+.brandSlider figure {
+  height: 100px;
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: 15px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.brandSlider figure img {
+  height: 25px;
+}
+
+.brandSlider figure.sqIcon img {
+  height: 45px;
+}
+
+.brandSlider figure.huaweiImg img {
+  width: 80px;
+  height: 14px;
+}
+
+/* responsive SCSS
+--------------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .userLogin {
+    padding: 0.5rem 0;
+  }
+  .socialLogin {
+    padding: 2rem 0;
+    border-top: 1px solid #999;
+  }
+  .userLogin {
+    border-right: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .userLogin {
+    padding: 3.5rem 0;
+  }
+  .socialLogin {
+    padding: 5rem 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .userLogin {
+    padding: 3.5rem 4rem;
+    border-right: 1px solid #999;
+  }
+  .socialLogin {
+    padding: 5rem 4rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

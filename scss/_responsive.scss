@@ -1,0 +1,54 @@
+
+/* responsive SCSS
+--------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    .userLogin {
+        padding: 0.5rem 0;
+    }
+    .socialLogin {
+        padding: 2rem 0;
+        border-top: 1px solid #999;
+    }
+    .userLogin {
+        border-right: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    .userLogin {
+        padding: 3.5rem 0;
+    }
+    .socialLogin {
+        padding: 5rem 0;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:1024px) {
+    .row {
+        flex-direction: row;
+    }
+    .userLogin {
+        padding: 3.5rem 4rem;
+        border-right: 1px solid #999;
+    }
+    .socialLogin {
+        padding: 5rem 4rem;
+    }
+}
+

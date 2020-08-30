@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>IntellyLabs - Login</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/splide-core.min.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="titlebar">
+            <h2>Repair your phone at your doorstep</h2>
+         </div>
+         <div class="row">
+            <div class="col d-flex col-flex userLogin">
+               <p class="heading">Please enter your Mobile number</p>
+               <form action="">
+                  <div class="mobileInput">
+                     <label for="mNumber"> Mobile </label>
+                     <div class="inputField">
+                        <input class="STDCode" type="tel" placeholder="STD" id="stdNumber" value="+91">
+                        <input type="tel" placeholder="Enter your Mobile" id="mNumber" maxlength="10" required>
+                     </div>
+                  </div>
+                  <button>CONTINUE</button>
+               </form>
+            </div>
+            <div class="col d-flex col-flex socialLogin">
+               <button class="fb">
+                    <span class="logo"><img src="img/icon/facebook.svg" height="30" width="30" alt=""></span>
+                    <span class="text">Continue with Facebook</span>
+               </button>
+               <button class="google">
+                    <span class="logo"><img src="img/icon/google.svg" height="30" width="30" alt=""></span>
+                    <span class="text">Continue with Google</span>
+               </button>
+               <button class="apple">
+                    <span class="logo"><img src="img/icon/apple.svg" height="30" width="30" alt=""></span>
+                    <span class="text">Continue with Apple</span>
+               </button>
+            </div>
+         </div>
+         <div class="brandSlider">
+            <div class="splide">
+               <div class="splide__track">
+                  <ul class="splide__list">
+                     <figure class="splide__slide sqIcon"><img src="img/brand/apple-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide"><img src="img/brand/samsung-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide sqIcon"><img src="img/brand/mi-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide"><img src="img/brand/moto-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide sqIcon"><img src="img/brand/google-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide"><img src="img/brand/lenovo-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide"><img src="img/brand/oneplus-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide"><img src="img/brand/oppo-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide"><img src="img/brand/vivo-min.jpg" alt="brand Logo"></figure>
+                     <figure class="splide__slide huaweiImg"><img src="img/brand/huawei-min.jpg" alt="brand Logo">
+                     </figure>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/splide.min.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+             var splide = new Splide('.splide', {
+                 type: 'loop',
+                 perPage: 8,
+                 autoplay: true,
+                 pagination: false,
+                 arrows: false,
+                 autoWidth: true,
+             });
+             splide.mount();
+         });
+      </script>
+   </body>
+</html>
